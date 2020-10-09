@@ -1,0 +1,167 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "mytest",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 22,
+        "min_value": 18
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_column_count_to_equal",
+      "kwargs": {
+        "value": 15
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "Email Id",
+          "Prefix",
+          "Name",
+          "Birth Date",
+          "Phone Number",
+          "Additional Email Id",
+          "Address",
+          "Zip Code",
+          "City",
+          "State",
+          "Country",
+          "Year",
+          "Time",
+          "Link",
+          "Text"
+        ]
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "Email Id"
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_value_lengths_to_be_between",
+      "kwargs": {
+        "column": "Email Id",
+        "min_value": 1
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    }
+  ],
+  "meta": {
+    "BasicSuiteBuilderProfiler": {
+      "batch_kwargs": {
+        "data_asset_name": "fake_data",
+        "datasource": "great_expectations__dir",
+        "path": "/Users/smruti.sahoo/tmp/great_expectations/fake_data.csv",
+        "reader_method": "csv",
+        "reader_options": {
+          "header": true
+        }
+      },
+      "created_at": 1602148459.599253,
+      "created_by": "BasicSuiteBuilderProfiler"
+    },
+    "citations": [
+      {
+        "batch_kwargs": {
+          "data_asset_name": "fake_data",
+          "datasource": "great_expectations__dir",
+          "path": "/Users/smruti.sahoo/tmp/great_expectations/fake_data.csv",
+          "reader_method": "csv",
+          "reader_options": {
+            "header": true
+          }
+        },
+        "batch_markers": {
+          "ge_load_time": "20201008T091401.989440Z"
+        },
+        "batch_parameters": null,
+        "citation_date": "20201008T091420.040284Z",
+        "comment": "BasicSuiteBuilderProfiler added a citation based on the current batch."
+      }
+    ],
+    "columns": {
+      "Additional Email Id": {
+        "description": ""
+      },
+      "Address": {
+        "description": ""
+      },
+      "Birth Date": {
+        "description": ""
+      },
+      "City": {
+        "description": ""
+      },
+      "Country": {
+        "description": ""
+      },
+      "Email Id": {
+        "description": ""
+      },
+      "Link": {
+        "description": ""
+      },
+      "Name": {
+        "description": ""
+      },
+      "Phone Number": {
+        "description": ""
+      },
+      "Prefix": {
+        "description": ""
+      },
+      "State": {
+        "description": ""
+      },
+      "Text": {
+        "description": ""
+      },
+      "Time": {
+        "description": ""
+      },
+      "Year": {
+        "description": ""
+      },
+      "Zip Code": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.12.4",
+    "notes": {
+      "content": [
+        "#### This is an _example_ suite\n\n- This suite was made by quickly glancing at 1000 rows of your data.\n- This is **not a production suite**. It is meant to show examples of expectations.\n- Because this suite was auto-generated using a very basic profiler that does not know your data like you do, many of the expectations may not be meaningful.\n"
+      ],
+      "format": "markdown"
+    }
+  }
+}
